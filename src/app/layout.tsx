@@ -1,8 +1,8 @@
 import type { Metadata } from 'next'
 import { ClerkProvider } from '@clerk/nextjs'
 import { Inter } from 'next/font/google'
-import './globals.css'
 import { ThemeProvider } from '@/components/theme-provider'
+import './globals.css'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <ClerkProvider>
-      <html lang='en'>
+      <html lang='en' suppressHydrationWarning>
         <ThemeProvider attribute='class' defaultTheme='system' enableSystem>
           <body className={inter.className}>{children}</body>
         </ThemeProvider>
