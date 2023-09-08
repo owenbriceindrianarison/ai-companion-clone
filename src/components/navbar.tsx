@@ -5,7 +5,7 @@ import Link from 'next/link'
 import { cn } from '@/lib/utils'
 import { Button } from '@/components/ui/button'
 import { ModeToggle } from '@/components/mode-toggle'
-import MobileSidebar from '@/components/mobile-sidebar'
+import { MobileSidebar } from '@/components/mobile-sidebar'
 
 const font = Poppins({
   weight: '600',

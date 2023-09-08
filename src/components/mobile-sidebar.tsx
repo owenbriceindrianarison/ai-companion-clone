@@ -1,9 +1,9 @@
 import { Menu } from 'lucide-react'
 import React from 'react'
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet'
-import Sidebar from '@/components/sidebar'
+import { Sidebar } from '@/components/sidebar'
 
-export default function MobileSidebar() {
+export function MobileSidebar() {
   return (
     <Sheet>
       <SheetTrigger className='md:hidden pr-4'>
