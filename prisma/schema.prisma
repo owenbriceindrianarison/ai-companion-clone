@@ -22,7 +22,7 @@ model Companion {
   userId          String
   userName        String
   src             String
-  name            String @db.Text
+  name            String
   description     String
   instructions    String
   seed            String
@@ -33,6 +33,4 @@ model Companion {
 
   category        Category @relation(fields: [categoryId], references: [id])
   categoryId      String @db.ObjectId
-
-  @@index([categoryId])
 }
